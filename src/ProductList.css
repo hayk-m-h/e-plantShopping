@@ -10,6 +10,23 @@ body {
     background-color: #f0f0f0;
 }
 
+.text h1{
+    width: 900px;
+    font-size: 40px;
+    background-color: #133b6a;
+    color: white;
+    height: 70px;
+    margin-left: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.text {
+    font-size: 30px;
+    color: #333;
+}
+
 /* Navbar */
 .navbar {
     background-color: #4CAF50;
@@ -39,16 +56,33 @@ body {
    
 }
 
+
+.product-grid {
+    border: 2px solid red;
+}
+
+.product_list {
+    border: 2px solid blue;
+}
+
+.product-card {
+    border: 2px solid green;
+}
+
+
+
 /* Product Grid */
 .product-grid {
     display:flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .product-list {
-    display: flex;
+    display:flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 50px;
     /* background-color: pink; */
@@ -63,6 +97,7 @@ body {
 .product-card {
     flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
     max-width: calc(26.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap */
+
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
@@ -95,6 +130,11 @@ body {
 .product-image {
     max-width: 100%;
     height: 200px; /* Adjust height for better consistency */
+}
+
+.product-image img {
+    object-fit: contain; /* Image fits inside the div, without cutting any part */
+    width: 100%;
 }
 
 .product-button {
